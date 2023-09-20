@@ -1,6 +1,17 @@
 import React, { useContext, useEffect } from 'react';
 import is from 'is_js';
 import Analytics from 'components/dashboards/analytics';
+import Crm from 'components/dashboards/crm';
+import Default from 'components/dashboards/default';
+
+import Ecommerce from 'components/dashboards/e-commerce';
+
+import Ims from 'components/dashboards/project-management';
+import ProjectManagement from 'components/dashboards/project-management';
+import Saas from 'components/dashboards/saas';
+
+import SupportDesk from 'components/dashboards/support-desk';
+
 import AppContext from 'context/Context';
 
 const Layout = () => {
@@ -35,6 +46,13 @@ const Layout = () => {
     <>
       <div className="container">
         <Analytics />
+        <Crm />
+        <Default />
+        <Ecommerce />
+        <Ims />
+        <ProjectManagement />
+        <Saas />
+        <SupportDesk />
       </div>
     </>
   );
